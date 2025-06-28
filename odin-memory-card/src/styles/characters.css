@@ -1,15 +1,72 @@
+@font-face {
+  font-family: 'harry-potter1';
+  src: url(../assets/fonts/magicschoolone-webfont.woff) format('woff'),
+      url(../assets/fonts/magicschoolone-webfont.woff2) format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+body {
+  background-image:
+  repeating-linear-gradient(125deg, hsl(55,0%,7%) 0px 12px, transparent 12px 14px),
+  repeating-linear-gradient(-125deg, hsl(55,0%,7%) 0px 12px,transparent 12px 14px),
+  linear-gradient(125deg, rgb(74, 74, 191), darkblue);
+}
+
+#root > h1 {
+  font-family: 'harry-potter1', 'Courier New', Courier, monospace;
+  font-size: 68px;
+  text-align: center;
+  color: yellowgreen;
+}
+
 img {
   width: 400px;
-  height: 400px;
+  height: 450px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-family: 'harry-potter1', 'Courier New', Courier, monospace;
+  font-size: 24px;
+  margin-bottom: 60px;
 }
 
 .card {
+  background-color: black;
+  color: white;
   display: inline-block;
-  border: 2px solid blue;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 3px 2px yellowgreen, -1px -1px 2px 2px yellowgreen;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.scoreCard {
+  position: absolute;
+  right: 200px;
+  top: 0;
+}
+
+.score,
+.bestScore {
+  font-size: 36px;
+  color: yellowgreen;
+  font-family: 'harry-potter2', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  padding: 0;
 }
