@@ -38,6 +38,7 @@ img {
   font-family: 'harry-potter1', 'Courier New', Courier, monospace;
   font-size: 24px;
   margin-bottom: 60px;
+  justify-content: center;
 }
 
 .card {
